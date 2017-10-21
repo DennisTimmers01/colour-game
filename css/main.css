@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Modak|Open+Sans:400,700');
+
+html {
+  font-family: 'Open Sans', sans-serif;  
+  font-size: 18px;
+}
+
+h1, 
+h2, 
+h3 {
+  font-family: 'Modak', cursive;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 1.3;
+}
+
+p {
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #FF527A;
+}
+
+header h1 {
+  text-align: center;
+  color: #41FC97;
+  width: 100%;
+}
+
+main {
+  padding: 0 15px;
+}
+
+article h2 {
+  padding: 0 0 0 15px;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 2px solid #41FC97;
+  height: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #41FC97;
+  height: 10px;
+  width: 70%;
+  float: left;
+  border-radius: 10px;
+}
+
+ul {
+  padding: 15px 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.team li {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 0 0 0;
+}
+
+.avatar {
+  display: block;
+  width: 3em;
+  height: 3em;
+  background: red;
+  border-radius: 50%;
+}
+
+.info {
+  width: calc(100% - 3em);
+}
+
+.info p {
+  margin: 0;
+  padding: 0 15px;
+}
