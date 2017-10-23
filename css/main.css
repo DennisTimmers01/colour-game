@@ -3,6 +3,7 @@
 html {
   font-family: 'Open Sans', sans-serif;  
   font-size: 18px;
+  color: #2B2D42;
 }
 
 h1, 
@@ -23,13 +24,21 @@ header {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  background: #FF527A;
+  background: #2B2D42;
 }
 
 header h1 {
   text-align: center;
   color: #41FC97;
   width: 100%;
+}
+
+.logo {
+  margin: 0 auto 2em auto;
+  width: 100%;
+  height: 7em;
+  position: relative;
+  animation: logo .2s both linear;
 }
 
 main {
@@ -118,4 +127,118 @@ ul {
   .team ul li:nth-child(even) {
     padding: 1em 0 0 60%;
   }
+}
+
+@media screen and (min-width: 60em) {
+  header {
+    padding: 0 0 4em 0;
+  }
+
+  header h1 {
+    font-size: 5em;
+  }
+
+  .logo {
+    margin: 0 auto;
+    width: 100%;
+    height: 12em;
+    position: relative;
+    animation: logo .2s both linear;
+  }
+}
+
+.line {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: inherit;
+  width: inherit;
+}
+
+#kkText {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: inherit;
+  width: inherit;
+  animation-name: kkEnter;
+  animation-duration: 0.8s;
+  animation-delay: 2.4s
+  animation-fill-mode: both;
+}
+
+#l2 {
+  animation-name: enter2;
+  animation-duration: 0.4s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+}
+
+#l3 {
+  animation-name: enter3;
+  animation-duration: 0.4s;
+  animation-delay: 0.05s;
+  animation-fill-mode: both;
+}
+
+#l4 {
+  animation-name: enter4;
+  animation-duration: 0.4s;
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
+}
+
+#l5 {
+  animation-name: enter5;
+  animation-duration: 0.4s;
+  animation-delay: 0.15s;
+  animation-fill-mode: both;
+}
+
+#l6 {
+  animation-name: enter6;
+  animation-duration: 0.4s;
+  animation-delay: 0.20s;
+  animation-fill-mode: both;
+}
+
+ /* keyframes KiesKleurig logo */
+@keyframes enter2 {
+  0% {transform: rotate(-60deg);}
+  100% {transform: rotate(0);}
+}
+@keyframes enter3 {
+  0% {transform: rotate(-120deg);}
+  100% {transform: rotate(0);}
+}
+@keyframes enter4 {
+  0% {transform: rotate(-180deg);}
+  100% {transform: rotate(0);}
+}
+@keyframes enter5 {
+  0% {transform: rotate(-240deg);}
+  100% {transform: rotate(0);}
+}
+@keyframes enter6 {
+  0% {transform: rotate(-300deg);}
+  100% {transform: rotate(0);}
+}
+@keyframes kkEnter {
+  0% {transform: scale(0);}
+  60% {transform: scale(1.2);}
+  80% {transform: scale(0.9);}
+  100% {transform: scale(1.0);}
+}
+@keyframes logo {
+  0%  {opacity: 0;}
+  10% {opacity: 0.01;}
+  20% {opacity: 0.04}
+  30% {opacity: 0.09;}
+  40% {opacity: 0.16;}
+  50% {opacity: 0.25;}
+  60% {opacity: 0.36;}
+  70% {opacity: 0.49;}
+  80% {opacity: 0.64;}
+  90% {opacity: 0.81;}
+  100% {opacity: 1;}
 }
