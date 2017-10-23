@@ -204,24 +204,24 @@ ul {
 
  /* keyframes KiesKleurig logo */
 @keyframes enter2 {
-  0% {transform: rotate(-60deg);}
-  100% {transform: rotate(0);}
+  from {transform: rotate(-60deg);}
+  to {transform: rotate(0);}
 }
 @keyframes enter3 {
-  0% {transform: rotate(-120deg);}
-  100% {transform: rotate(0);}
+  from {transform: rotate(-120deg);}
+  to {transform: rotate(0);}
 }
 @keyframes enter4 {
-  0% {transform: rotate(-180deg);}
-  100% {transform: rotate(0);}
+  from {transform: rotate(-180deg);}
+  to {transform: rotate(0);}
 }
 @keyframes enter5 {
-  0% {transform: rotate(-240deg);}
-  100% {transform: rotate(0);}
+  from {transform: rotate(-240deg);}
+  to {transform: rotate(0);}
 }
 @keyframes enter6 {
-  0% {transform: rotate(-300deg);}
-  100% {transform: rotate(0);}
+  from {transform: rotate(-300deg);}
+  to {transform: rotate(0);}
 }
 @keyframes kkEnter {
   0% {transform: scale(0);}
@@ -230,15 +230,6 @@ ul {
   100% {transform: scale(1.0);}
 }
 @keyframes logo {
-  0%  {opacity: 0;}
-  10% {opacity: 0.01;}
-  20% {opacity: 0.04}
-  30% {opacity: 0.09;}
-  40% {opacity: 0.16;}
-  50% {opacity: 0.25;}
-  60% {opacity: 0.36;}
-  70% {opacity: 0.49;}
-  80% {opacity: 0.64;}
-  90% {opacity: 0.81;}
-  100% {opacity: 1;}
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
